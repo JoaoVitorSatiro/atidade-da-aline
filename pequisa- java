@@ -31,3 +31,11 @@ else(senão): serve para executar uma condição de outro bloco caso seja falsa;
 else if: permite executar alterações de um codigo entre duas opções;
 if ternário: várias formas de se utilizar uma condição para a verificação;
 &&: sua forma de trabalho possibilita executar um código de forma parecida do if;
+
+Switch case:
+switch: serve para selecionar blocos de códigos;
+Quando o JavaScript atinge uma break, isso fara ele sair do bloco switch, assim, interrompendo a execução do bloco;
+A default serve para especificar o código a ser executado se não houver correspondencia de maiusculas e minúsculas;
+Detalhes de troca - se varios casos corresponderem a um valor de caso, o primeiro caso será selecionado, se nenhum caso correspondente for encontrado, o programa continua funcionando normalmente;
+Comparação estrita - os casos de troca usam comparação estrita, os valores devem serdo mesmo tipo para corresponder, essa comparação sera considerada verdadeira caso os operandos sejam do mesmo tipo;
+
