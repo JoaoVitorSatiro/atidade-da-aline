@@ -9,5 +9,25 @@ NaN: é encontrado quando um numero não pode ser expresso;
 tipo string: é usado para representar dados textuais;
 tipo symbol: poe ser usado como chave de uma propriedade;
 
+Propriedade de Dados:
+value: Valor do Java recuperado por um acesso da propriedade;
+gravável: Valor do tipo Booleano que pode indicar se a propriedade pode ser alterada com uma atribuição;
+enumerável: Valor do tipo Booleano que indica se a propriedade pode ser enumerada por um loop;
+configurável: Valor do tipo Booleano que indica se a propriedade pode ser excluída ou alterada para uma propriedade acessora e pode ter seus atributos alterados.
+
 Estrutura de Repetição:
-While(enquanto)
+do...While(enquanto) a condição vai se repetir até que se torne falsa;
+for: se repete até que a condição específica seja falsa;
+while: executa seuas funções desde que sua condição seja verdadeira;
+label: serve para identificar um laço, e então usar break ou continue, para saber se deve interromper ou continuar;
+break: serve para interromper laços ou conjuntos;
+continue: serve para reiniciar uma instrução;
+for...in: executa iterações de uma variável específica;
+for...of: serve para criar laços com objetos iterativos,
+
+Estruturas Condicionais:
+if(se): serve para executar comandos que estão no bloco caso seu condição seja verdadeira;
+else(senão): serve para executar uma condição de outro bloco caso seja falsa;
+else if: permite executar alterações de um codigo entre duas opções;
+if ternário: várias formas de se utilizar uma condição para a verificação;
+&&: sua forma de trabalho possibilita executar um código de forma parecida do if;
