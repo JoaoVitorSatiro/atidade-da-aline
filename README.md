@@ -41,3 +41,12 @@ A default serve para especificar o código a ser executado se não houver corres
 Detalhes de troca - se varios casos corresponderem a um valor de caso, o primeiro caso será selecionado, se nenhum caso correspondente for encontrado, o programa continua funcionando normalmente;
 Comparação estrita - os casos de troca usam comparação estrita, os valores devem serdo mesmo tipo para corresponder, essa comparação sera considerada verdadeira caso os operandos sejam do mesmo tipo;
 
+Elementos Gráficos do Androis Studio:
+View: serve para que o usuário utilize para visualizar ou interagir com algo;
+viewgroup: é uma caixa invisível que estrutura o layout para o view;
+textview: serve para definir um texto de um arquivo;
+requestfocus: serve para manipular o foco de uma exibição específica;
+setvisibility: mostra ou esconde a visualização;
+button: serve para que o usuário possa clicar num botão çara executar algo;
+linearlayout: serve para organizar informações ou comandos na horizontal em  uma coluna só ou uma linha;
+editText: serve para editar o texto exibido pelo usuário;
