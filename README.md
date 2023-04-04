@@ -114,11 +114,30 @@ var pessoa = {
 ```
 ### **enumerável:** Valor do tipo Booleano que indica se a propriedade pode ser enumerada por um loop;<br>
 ```
+var o = {};
 
+Object.defineProperty(o, 'a', {
+  value: 1,
+  enumerable: true
+});
+
+Object.defineProperty(o, 'b', {
+  value: 2,
+  enumerable: false
+});
 ```
 ### **configurável:** Valor do tipo Booleano que indica se a propriedade pode ser excluída ou alterada para uma propriedade acessora e pode ter seus atributos alterados;<br>
 ```
+ var o = {};
 
+Object.defineProperty(o, 'a', {
+  get: function() { return 1; },
+  configurable: false
+});
+
+Object.defineProperty(o, 'a', {
+  configurable: true
+}); // lança um TypeError
 ```
 ___
 >## *Estrutura de Repetição:*
@@ -150,7 +169,22 @@ while (n < 3) {
 ```
 ### **label:** serve para identificar um laço, e então usar break ou continue, para saber se deve interromper ou continuar;<br>
 ```
+label :
+   declaração
 
+   var i, j;
+
+loop1:
+for (i = 0; i < 3; i++) {      //O primeiro 'for' é etiquetado(label) com "loop1"
+   loop2:
+   for (j = 0; j < 3; j++) {   //O segundo é etiquetado(label) com "loop2"
+      if (i == 1 && j == 1) {
+         continue loop1;
+      } else {
+         console.log("i = " + i + ", j = " + j);
+      }
+   }
+}
 ```
 ### **break:** serve para interromper laços ou conjuntos;<br>
 ```
@@ -262,11 +296,33 @@ ___
 >## *Elementos Gráficos do Androis Studio:*
 ### **View:** serve para que o usuário utilize para visualizar ou interagir com algo;<br>
 ```
-
+   <View ...
+           android:tag="@string/mytag_value" />
+     <View ...>
+         <tag android:id="@+id/mytag"
+              android:value="@string/mytag_value" />
+     </View>
 ```
 ### **viewgroup:** é uma caixa invisível que estrutura o layout para o view;<br>
 ```
-
+<ViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@[+][package:]id/resource_name"
+    android:layout_height=["dimension" | "match_parent" | "wrap_content"]
+    android:layout_width=["dimension" | "match_parent" | "wrap_content"]
+    [ViewGroup-specific attributes] >
+    <View
+        android:id="@[+][package:]id/resource_name"
+        android:layout_height=["dimension" | "match_parent" | "wrap_content"]
+        android:layout_width=["dimension" | "match_parent" | "wrap_content"]
+        [View-specific attributes] >
+        <requestFocus/>
+    </View>
+    <ViewGroup >
+        <View />
+    </ViewGroup>
+    <include layout="@layout/layout_resource"/>
+</ViewGroup>
 ```
 ### **textview:** serve para definir um texto de um arquivo;<br>
 ```
@@ -277,11 +333,14 @@ android:layout_height="75dp"
 ```
 ### **requestfocus:** serve para manipular o foco de uma exibição específica;<br>
 ```
+public final boolean requestFocus ()
 
+public boolean requestFocus (int direction, 
+                Rect previouslyFocusedRect)
 ```
 ### **setvisibility:** mostra ou esconde a visualização;<br>
 ```
-
+public void setVisibility (int visibility)
 ```
 ### **button:** serve para que o usuário possa clicar num botão çara executar algo;<br>
 ```
@@ -301,6 +360,17 @@ android:layout_heigth="wrap_content"
 ```
 ### **editText:** serve para editar o texto exibido pelo usuário;<br>
 ```
-
+<SomeLayout>
+    .
+    .
+    <Edittext
+        android:SomeAttribute1 = "Value of attribute1"
+        android:SomeAttribute2 = "Value of attribute2"
+        .
+        .
+        android:SomeAttributeN = "Value of attributeN"/>
+    .
+    .
+</SomeLayout>
 ```
 ___
