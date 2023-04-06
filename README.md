@@ -374,3 +374,10 @@ android:layout_heigth="wrap_content"
 </SomeLayout>
 ```
 ___
+>## *Referências Bibliográficas*
+```
+https://developer.android.com/guide/topics/ui/custom-components?hl=pt-br
+https://www.devmedia.com.br/javascript-estrutura-condicional-if/40611
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures
+```
