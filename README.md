@@ -1,4 +1,4 @@
-# **Atidade-da-aline**
+# **Atividade-da-aline**
 ## **Atividade sobre pesquisa javascript**
 <hr>
 
